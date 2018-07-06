@@ -4,6 +4,7 @@ body{
 .navbar,.ask-prop{
 	width: 100%;
 	margin: 0 auto;
+	box-shadow: none;
 }
 a{
 	color: white !important;
@@ -11,18 +12,14 @@ a{
 }
 .nav-fluid{
 	padding: 10px !important;
-    background-image:  linear-gradient(to bottom , rgba(10, 16, 15, 0.57), rgba(172, 137, 97, 0.51)), url(../img/broker.png) !important;
-    background-attachment: fixed; 
-    background-size: cover; 
-    background-position: center;
+    background-image:linear-gradient(to bottom , rgba(10, 16, 15, 0.26), rgba(172, 137, 97, 0.51)), url(../img/community.png) !important;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position-y: 0px;
     overflow: hidden;
     color: white !important;
 }
 
-.class
-{
-	margin-top: 10px;
-}
 .nav-link{
 	padding: 4px 5px !important;
 	cursor: pointer;
@@ -79,6 +76,10 @@ a{
     border-radius: unset !important;
     background: #dd960d;
     color: white;
+}
+.home-btn{
+	margin-left: 20px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 768px){

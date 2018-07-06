@@ -30,6 +30,7 @@
     width: 97%;
     overflow: hidden;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .disc-forum{
     padding:0 10px 10px 10px;
@@ -63,5 +64,8 @@
     box-shadow: 1px 1px 5px grey;
 }
 .card-footer{
-    font-size: 15px;
+   font-size: 15px;
+    padding: 9px;
+    font-weight: 500;
+    background: white;
 }
