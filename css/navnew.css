@@ -10,7 +10,7 @@ body {
    z-index: 500;
     top: 0;
     left: 0;
-    background-color:#0e8fc0;
+    background-color:#1f3456;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 0px;
@@ -52,13 +52,16 @@ body {
 }
 .cur-comm-section{
     background: white;
-    height: 400px;
     margin-top: 20px;
+    border: 1px solid #c1c1c1;
     position: relative;
+}
+.cur-comm-section ul{
     overflow-y: auto;
+    max-height: 235px;
 }
 .gold-btn{
-    background: #333333 !important;
+    background: #10172e !important;
     color: white !important;
     font-size: 15px !important;
     font-weight: 600 !important;
@@ -71,6 +74,7 @@ body {
     font-weight: 500;
     padding: 10px;
     cursor: pointer;
+    border: 0 !important;
     border-radius: 0 !important
 }
 #joinedCommunity .list-group-item:hover{
@@ -91,7 +95,9 @@ body {
 }
 .commMembers ul li{
     font-size: 15px;
+        border-bottom: 1px solid #ecc57a !important;
     padding: 7px 10px;
+    padding-left: 20px;
     border:0;
 }
 .commMembers ul li i{
@@ -104,9 +110,16 @@ body {
     font-size: 14px;
 }
 .mem{
-    max-height: 400px;
+    max-height: 250px;
     overflow-y: auto;
-    text-align: center;
+}
+.dot{
+    border-radius: 100%;
+    background-color: green;
+    position: absolute;
+    padding: 4px;
+    top: 15px;
+    left: 7px;
 }
 .role{
     background: #dd960d8c;
@@ -160,6 +173,9 @@ body {
     background-position: center;
     background-size: cover;
 }
+.chat-text{
+        font-size: 14px;
+}
 .chat-box h6{
     color: #ecc57a;
 }
@@ -196,4 +212,23 @@ body {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
+}
+/* width */
+.mem::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.mem::-webkit-scrollbar-track {
+    background:#f1f1f1; 
+}
+ 
+/* Handle */
+.mem::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+.mem::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }

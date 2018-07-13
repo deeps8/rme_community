@@ -69,19 +69,27 @@ a{
 	border:unset !important; 
 }
 .src-btn{
-	position: absolute;
-    top: 0;
-    right: 0;
-    font-weight: 500 !important;
-    border-radius: unset !important;
-    background: #dd960d;
-    color: white;
+	position: absolute !important;
+    z-index: 5 !important;
+    right: 0 !important;
+    border-radius: 25px !important;
+    padding: 3.5px 15px!important;
+    background: transparent !important;
+    color: #333;
 }
 .home-btn{
 	margin-left: 20px;
     font-size: 20px;
 }
-
+.send-src-btn{
+	background-color: #dd8a0d !important;
+    font-weight: 500 !important;
+    color: white !important;
+    top: 0 !important;
+    padding: 10px !important;
+    border-radius: 2px !important;
+    border:0 !important;
+}
 @media only screen and (max-width: 768px){
 	.navbar , .ask-prop{
 		width:100%;

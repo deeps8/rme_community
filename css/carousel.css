@@ -56,8 +56,8 @@
 
 }
 #mainSideBar ul li .nav-link.active{
-     color: red !important;
-    padding-top:10px !important;
+   color: white !important;
+    padding-top: 10px !important;
 
 }
 .card{
