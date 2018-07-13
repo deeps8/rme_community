@@ -38,52 +38,43 @@
 </head>
 <body>
         <div class="modal fade" id="myModal">
-                  <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog modal-dialog-centered" style=" max-width: 65%;">
+                  <div class="modal-dialog" style="max-width: 100%;width: 100%;">
                     <div class="modal-content">
 
                       <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Modal Heading</h4>
+                      <div class="modal-header" style="padding: 7px 20px;color: #074760;">
+                        <h4 class="modal-title">Start a discussion</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
 
                       <!-- Modal body -->
                       <div class="modal-body">
-                       <form>
-                        <div class="form-group">
-                          
-                        
-                            <input type="text" class="form-control" name="field1" placeholder="title"><br>
-                            <input type="text" class="form-control" name="field2"><br>
+                       <form>                          
+                          <div class="row">
+                            <div class="col form-group">
+                                <input type="text" class="form-control" name="field1" placeholder="Post title or question">
+                            </div>
+                            <div class="col form-group">
+                                <select class="form-control">
+                                  <option>General Real Estate </option>
+                                  <option>Investment</option>
+                                  <option>RME Academy</option>
+                                  <option>Real Estate on Blockchain</option>
+                                  
+                                </select>
+                            </div>
+                          </div>
                             <textarea name="content" id="editor"></textarea>
-                            <div class="photo-upload-wrap">
-                              <div class="uploaded-img-wrap"></div>
-                              <div class="upload-btn-wrap">
-                                <input type="file" id="imageUpload" name="file" class="upload-file" accept="image/jpg, image/png, image/jpeg, image/gif">
-                                <label for="imageUpload" class="upload-btn"><i class="icon icon-add"></i><span>Add Image</span></label>
-                              </div>
-                            </div>
-                            <div class="attachment-upload-wrap">
-                              <div class="uploaded-wrap"></div>
-                              <div class="upload-btn-wrap">
-                                <input type="file" id="attachmentUpload" name="file" class="upload-file" accept=".xlsx,.xls,.doc, .docx,.ppt, .pptx,.txt,.pdf">
-                                <label for="attachmentUpload" class="upload-btn"><i class="icon icon-add"></i><span>Add Attachment</span></label>
-                              </div>
-                            </div>
-                            <div class="search-input in-discussion">
-                              <div class="search-box-wrap">
-                                <div class="form-element    ">
-                                  <input type="text" class="input search-textbox form-control px-5" placeholder="Start typing to add tags">
-                                </div>
-                              </div>
-                              <ul class="selected-tag-box"></ul>
-                              <ul class="suggestion-box"></ul>
-                            </div>
+                            <div class="custom-file form-group mb-3">
+                                <input type="file" class="custom-file-input" name="certify" required="">
+                                <label class="file-alt">
+                                  <span class="input-group-addon gly"></span>Upload the Attachments
+                                </label>
+                             </div>
                             <div class="m10 center">
-                              <button class="btn primary disabled">Post Discussion</button>
-                            </div>
-                          </div>  
+                              <button class="btn btn-primary">Post Discussion</button>
+                            </div>  
                        </form>
                           <script>
                             ClassicEditor
@@ -96,12 +87,6 @@
                                       } );
                           </script>
                       </div>
-
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      </div>
-
                     </div>
                   </div>
                   </div>
@@ -117,7 +102,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar" class=" " style="m">
             <div class="sidebar-header">
-              <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="width: 70%;height: 40%;">
+              <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3 rme-logo">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
              </div>
@@ -130,7 +115,7 @@
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                       
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#myModal">-Create Post</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal">- Create Post</a>
                         </li>
                      
                     </ul>
@@ -144,25 +129,25 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Browse Community</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">-Builder</a>
+                            <a href="#">- Builder</a>
                         </li>
                         <li>
-                            <a href="#">-Broker</a>
+                            <a href="#">- Broker</a>
                         </li>
                         <li>
-                            <a href="#">-Land Owner</a>
+                            <a href="#">- Land Owner</a>
                         </li>
                         <li>
-                            <a href="#">-Human Resource</a>
+                            <a href="#">- Human Resource</a>
                         </li>
                         <li>
-                            <a href="#">-Consultant</a>
+                            <a href="#">- Consultant</a>
                         </li>
                         <li>
-                            <a href="#">-End User</a>
+                            <a href="#">- End User</a>
                         </li>
                         <li>
-                            <a href="#">-Digital Marketing</a>
+                            <a href="#">- Digital Marketing</a>
                         </li>
                     </ul>
                  </li>
@@ -187,9 +172,19 @@
 <div id="main">
   <div class="container-fluid nav-fluid">
     <!-- navbar with search section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
         <a href="index.html" class="home-btn"><i class="fas fa-home"></i></a>
+        <form class="ml-lg-5 ml-md-5 ml-sm-1" action="" method="" style="width: 40%">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text p-0 border-0">
+                        <button type="submit" name="search" class="src-input-all btn src-btn pr-3 pl-3"><i class="fas fa-search"></i></button>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control src-input-all" id="inlineFormInputGroup" placeholder="search here ..">
+                  </div>
+          </form>
           <ul class="nav ml-auto">
             <li class="nav-item mr-lg-4 mr-md-3 mr-sm-3">
               <button class="nav-link btn btn-primary discuss">Start a discussion</button>

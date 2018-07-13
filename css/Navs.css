@@ -50,3 +50,21 @@
 .row .col-sm-5 a{
   color: blue !important;
 }
+.src-input-all{
+  padding: 3px 5px !important;
+    border-radius: 0px !important;
+}
+#fixed-nav{
+  margin-bottom: 0!important;
+    padding: 10px;
+    background: #333 !important;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    left: 0
+}
+#main{
+  margin-top: 52px;
+}
