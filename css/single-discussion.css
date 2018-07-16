@@ -24,9 +24,14 @@
 	font-size: 14px;
 }
 .discussion-info{
-	padding: 0 9%;
+	margin-top: 20px;
 	padding-bottom: 20px;
 	font-size: 14.5px;
+}
+.similar-dsc,.trending-dsc{
+	background: white;
+    padding: 20px;
+    border: 1px solid #c6c6c6;
 }
 .replies{
 	margin: 20px 0;
@@ -46,25 +51,25 @@
     padding: 2px 10px !important;
     border-radius: 2px !important;
 }
-.similar-dsc ul{
+.similar-dsc ul,.trending-dsc ul{
 	list-style: none;
     padding: 0;
     margin: 0;
 }
-.similar-dsc ul li{
+.similar-dsc ul li,.trending-dsc ul li{
 	margin:10px 0;
 	padding:0  10px;
 }
-.similar-dsc ul  li a{
+.similar-dsc ul  li a,.trending-dsc ul  li a{
 	color:#0da4dd  !important;
 	font-size: 14px;
 	font-weight: 500;
 }
-.similar-dsc ul  li a:hover{
+.similar-dsc ul  li a:hover,.trending-dsc ul  li a:hover{
 	color:#333 !important;
 	text-decoration: underline !important;
 }
-.similar-dsc ul  li span{
+.similar-dsc ul  li span,.trending-dsc ul  li span{
 	font-size: 12.5px;
 }
 .filter{

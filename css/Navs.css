@@ -72,3 +72,6 @@
 #main{
   margin-top: 52px;
 }
+.discuss-list li:hover{
+  background-color: #b5d9ff !important;
+}

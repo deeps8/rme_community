@@ -94,11 +94,11 @@ body {
     background:linear-gradient(to bottom,white,#c7c5c5);
 }
 .commMembers ul li{
-    font-size: 15px;
-        border-bottom: 1px solid #ecc57a !important;
+   font-size: 15px;
+    border-top: 1px solid #ecc57a !important;
     padding: 7px 10px;
     padding-left: 20px;
-    border:0;
+    border-bottom: 0 !important;
 }
 .commMembers ul li i{
     color: #007bff;

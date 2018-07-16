@@ -38,7 +38,7 @@
 </head>
 <body>
         <div class="modal fade" id="myModal">
-                  <div class="modal-dialog modal-dialog-centered" style=" max-width: 65%;">
+                  <div class="modal-dialog modal-dialog-centered modal-width">
                   <div class="modal-dialog" style="max-width: 100%;width: 100%;">
                     <div class="modal-content">
 
@@ -52,10 +52,10 @@
                       <div class="modal-body">
                        <form>                          
                           <div class="row">
-                            <div class="col form-group">
+                            <div class="col-lg col-md col-sm-12 form-group">
                                 <input type="text" class="form-control" name="field1" placeholder="Post title or question">
                             </div>
-                            <div class="col form-group">
+                            <div class="col-lg col-md col-sm-12 form-group">
                                 <select class="form-control">
                                   <option>General Real Estate </option>
                                   <option>Investment</option>
@@ -174,8 +174,8 @@
     <!-- navbar with search section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
-        <a href="index.html" class="home-btn"><i class="fas fa-home"></i></a>
-        <form class="ml-lg-5 ml-md-5 ml-sm-1" action="" method="" style="width: 40%">
+        <a href="index.html" class="home-btn sm-display"><i class="fas fa-home"></i></a>
+        <form class="ml-lg-5 ml-md-5 ml-sm-1 sm-display" action="" method="" style="width: 40%">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text p-0 border-0">
@@ -187,7 +187,7 @@
           </form>
           <ul class="nav ml-auto">
             <li class="nav-item mr-lg-4 mr-md-3 mr-sm-3">
-              <button class="nav-link btn btn-primary discuss">Start a discussion</button>
+              <button class="nav-link btn btn-primary discuss" data-toggle="modal" data-target="#myModal">Start a discussion</button>
             </li>
             <li class="nav-item mr-lg-4 mr-md-3 mr-sm-3 display-item">
              <div class="dropdown">
@@ -214,7 +214,25 @@
           </div>
             </li>
             <li class="nav-item mr-lg-4 ">
-              <i class="fas fa-bell nav-link" style="font-size: 19px;padding-top: 7px !important;"></i>
+              <i class="fas fa-bell nav-link" style="font-size: 18px;padding-top: 7px !important;"></i>
+            </li>
+            <li class="nav-item mr-lg-4 " id="open-src" onclick="opsrc_resp()">
+              <i class="fas fa-search nav-link" style="font-size: 18px;padding-top: 7px !important;" ></i>
+            </li>
+            <li class="nav-item mr-lg-4  src-resp" id="close-src" onclick="clsrc_resp()">
+              <i class="fas fa-times nav-link" style="font-size: 18px;padding-top: 7px !important;"></i>
+            </li>
+            <li class="nav-item mr-lg-4 src-resp" id="resp-input">
+             <form class="ml-lg-5 ml-md-5 ml-sm-1 src-resp-input" action="" method="">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text p-0 border-0">
+                        <button type="submit" name="search" class="src-input-all btn src-btn pr-3 pl-3"><i class="fas fa-search"></i></button>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control src-input-all" id="FormInput" value=""  placeholder="search here ..">
+                  </div>
+            </form>
             </li>
           </ul>
         
@@ -230,7 +248,22 @@
         </div>
 
   </div>
-
+<script type="text/javascript">
+  var srcinput=document.getElementById("resp-input");
+  var opensrc=document.getElementById("open-src");
+  var closesrc=document.getElementById("close-src");
+  function opsrc_resp(){
+    opensrc.style.display="none";
+    srcinput.style.display="block";
+    closesrc.style.display="block";
+  }
+  function clsrc_resp(){
+    opensrc.style.display="block";
+    srcinput.style.display="none";
+    closesrc.style.display="none";
+    document.getElementById("FormInput").value="";
+  }
+</script>
 
 
 
@@ -470,7 +503,7 @@
 
       <div class="tab-content">
         <div id="tab1" class="container-fluid tab-pane active p-0">
-          <ul class="list-group">
+          <ul class="list-group discuss-list">
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
@@ -794,620 +827,54 @@
 
 <!--------------------------------------------FORUM------------------------ -->
 <!-- top developers section starts here  -->
-
-
-<div class="container-fluid" id="lowerBar">
-      <!-- main heading -->
-        <h3 class="col-sm" id="mainHeading">Top Categories</h3>
-      <!-- heading end -->
-      <div class="row">
+<div class="top-category">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="container">
         
-        <div class="col-md-2 ml-auto" id="mainSideBar">
-        <!-- the SideBar -->
-          <!-- toggler button for sideBar -->
-          <nav class="navbar navbar-expand-lg" style="margin-bottom: 0;">
-            <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#sideNav">
-                <i class="fa fa-bars"></i>
-            </button>
-
-          <!-- link items -->
-          <div class="collapse navbar-collapse " id="sideNav">
-              <ul class="nav nav-tabs flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#topDeveloper">Top Developers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#topBuilders">Top Builders</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#topConsultants">Top Consultants</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" href="#topBroker">Top Broker</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" href="#topLandOwner">Top Land Owner</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" href="#topInvestor">Top Investor</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" href="#topBrokingHouses">Top Broking houses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" href="#topDigitalMarketing">Top end users</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-           <!-- SideBar Ends -->
-        </div>
-
-        <div class="col-md-9" id="mainContent">
-  <!-- tab contents  -->
-          <div class="tab-content">
-        <!-- topDeveloper tab content -->
-            <div class="tab-pane fade show active" id="topDeveloper" >
-              <!-- topDeveloper corousel starts -->
-              <div class="carousel slide" id="topDeveloperCauousel" data-ride="carousel">
-                <!-- slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages" src="images/building-1.jpg" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h6 class="card-title"> Katsua Developers </h6>
-                            <!-- <button class="btn viewButton" data-toggle="collapse" data-target="#developer1">view caption
-                            </button> -->
-                          </div>
-                          
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">updated mins ago :12</li>
-                              <li class="list-inline-item">completed:18</li>
-                            
-                            </ul>
-                          </div>
-                            <span class="viewButton card" data-toggle="collapse" data-target="#developer1">
-                                <i class="fas fa-caret-down"></i></span>
-                          <div class="card-body collapse" id="developer1">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages" src="images/building-2.jpg" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h6 class="card-title"> Pukalo Developers </h6>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">updated mins ago :6</li>
-                              <li class="list-inline-item">completed:22</li>
-                            </ul>
-                          </div>
-                          <span class="viewButton card" data-toggle="collapse" data-target="#developer2">
-                                <i class="fas fa-caret-down"></i></span>
-                          <div class="card-body collapse" id="developer2">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages" src="images/building-3.jpg" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h6 class="card-title"> harisha Developers </h6>
-                          </div>
-                          
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">updated mins ago :7</li>
-                              <li class="list-inline-item">completed:12</li>
-                            </ul>
-                          </div>
-                          <span class="viewButton card" data-toggle="collapse" data-target="#developer3">
-                                <i class="fas fa-caret-down"></i></span>
-                          <div class="card-body collapse" id="developer3">
-                            <p class="card-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages" src="images/building-4.jpg" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h6 class="card-title"> Enling Developers </h6>
-                          </div>
-                          
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">updated mins ago :1</li>
-                              <li class="list-inline-item">completed:8</li>
-                            </ul>
-                          </div>
-                          <span class="viewButton card" data-toggle="collapse" data-target="#developer4">
-                                <i class="fas fa-caret-down"></i></span>
-                          <div class="card-body collapse" id="developer4">
-                            <p class="card-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages" src="images/building-3.jpg" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h6 class="card-title">  Panth Developerss </h6>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">updated mins ago :12</li>
-                              <li class="list-inline-item">completed:1</li>
-                            </ul>
-                          </div>
-                          <span class="viewButton card" data-toggle="collapse" data-target="#developer5">
-                                <i class="fas fa-caret-down"></i></span>
-                          <div class="card-body collapse" id="developer5">
-                            <p class="card-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages" src="images/building-1.jpg" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h6 class="card-title"> harisha Developers </h6>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">updated mins ago :7</li>
-                              <li class="list-inline-item">completed:1</li>
-                            </ul>
-                          </div>
-                          <span class="viewButton card" data-toggle="collapse" data-target="#developer6">
-                                <i class="fas fa-caret-down"></i></span>
-                          <div class="card-body collapse" id="developer6">
-                            <p class="card-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              <!-- slide controls -->
-                <button class="btn prevButton float-left" href="#topDeveloperCauousel" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="btn nextButton float-right" href="#topDeveloperCauousel" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-              </div>
-            </div>
-            <!-- topDeveloper Corousel ends -->
-            </div>
-        <!-- topDeveloper tab ended -->
-        <!-- topBuilders tab content -->
-            <div class="tab-pane fade" id="topBuilders">
-        <!-- topBuilder carousel starts -->
-            <div class="carousel slide" id="topBuilderCauousel" data-ride="carousel">
-                <!-- slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages" src="images/building-5.jpg" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h6 class="card-title"> jain Builders </h6>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#builder1">view caption
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="builder1">
-                          <p class="card-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">updated mins ago :12</li>
-                            <li class="list-inline-item">completed:18</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages" src="images/building-2.jpg" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h6 class="card-title"> shivam Builders </h6>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#builder2">view caption
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="builder2">
-                          <p class="card-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">updated mins ago :6</li>
-                            <li class="list-inline-item">completed:22</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages" src="images/building-3.jpg" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h6 class="card-title"> Rassha Builders </h6>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#builder3">view caption
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="builder3">
-                          <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">updated mins ago :7</li>
-                            <li class="list-inline-item">completed:12</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages" src="images/building-4.jpg" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h6 class="card-title"> Enling Builders </h6>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#builder4">view caption
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id=builder4">
-                          <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">updated mins ago :1</li>
-                            <li class="list-inline-item">completed:8</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages" src="images/building-5.jpg" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h6 class="card-title"> INC Builders </h6>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#builder5">view caption
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="builder5">
-                          <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">updated mins ago :12</li>
-                            <li class="list-inline-item">completed:1</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages" src="images/building-1.jpg" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h6 class="card-title"> Incognita Builders </h6>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#builder6">view caption
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="builder6">
-                          <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">updated mins ago :7</li>
-                            <li class="list-inline-item">completed:1</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <!-- slide controls -->
-                <button class="btn prevButton float-left"  href="#topBuilderCauousel" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="btn nextButton float-right" href="#topBuilderCauousel" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-              </div>
-            </div>
-        <!--top Builder carousel ends  -->
-            </div>
-        <!-- topBuilder tab ended -->
-        <!-- topConsultants tab content -->
-            <div class="tab-pane fade" id="topConsultants">
-        <!--top Consultants Carousel starts  -->
-            <div class="carousel slide" id="topConsultantCauousel" data-ride="carousel">
-                <!-- slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages consultantImages" src="images/person-1.png" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h5 class="card-title"> Mango Consultant </h5>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#consultant1">view details
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="consultant1">
-                          <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">total consults:12</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-2.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> ING Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant2">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant2">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:23</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-3.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> Cingh Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant3">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant3">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:15</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-2.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> KJU Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant4">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant4">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:13</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-4.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> Mango Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant5">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant5">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:23</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-3.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> Mango Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant6">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant6">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:3</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              <!-- slide controls -->
-                <button class="btn prevButton float-left"  href="#topConsultantCauousel" data-slide="prev" class="btn btn-primary">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="btn nextButton float-right" href="#topConsultantCauousel" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-              </div>
-            </div>
-        <!-- top Consultants Carousel ends -->
-            </div>
-        <!-- topConsultants tab ended -->
-                    <div class="tab-pane fade" id="topBrooker">
-        <!--top Brooker Carousel starts  -->
-            <div class="carousel slide" id="topBrookerCauousel" data-ride="carousel">
-                <!-- slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                      <div class="card">
-                        <img class="card-img-top contentImages consultantImages" src="images/person-1.png" alt="card image cap" >
-                        <div class="card-img-overlay">
-                          <h5 class="card-title"> Mango Consultant </h5>
-                          <button class="btn viewButton" data-toggle="collapse" data-target="#brooker1">view details
-                          </button>
-                        </div>
-                        <div class="card-body collapse" id="consultant1">
-                          <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                        </div>
-                        <div class="card-footer">
-                          <ul class="list-inline ">
-                            <li class="list-inline-item">total consults:12</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-2.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> ING Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant2">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant2">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:23</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-3.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> Cingh Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant3">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant3">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:15</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-2.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> KJU Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant4">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant4">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:13</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-4.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> Mango Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant5">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant5">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:23</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 detailCard">
-                        <div class="card">
-                          <img class="card-img-top contentImages consultantImages" src="images/person-3.png" alt="card image cap" >
-                          <div class="card-img-overlay">
-                            <h5 class="card-title"> Mango Consultant </h5>
-                            <button class="btn viewButton" data-toggle="collapse" data-target="#consultant6">view details
-                            </button>
-                          </div>
-                          <div class="card-body collapse" id="consultant6">
-                            <p class="card-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque</p>
-                          </div>
-                          <div class="card-footer">
-                            <ul class="list-inline ">
-                              <li class="list-inline-item">total consults:3</li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              <!-- slide controls -->
-                <button class="btn prevButton"  href="#topConsultantCauousel" data-slide="prev" class="btn btn-primary">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="btn nextButton  right-btn" href="#topConsultantCauousel" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-
-              </div>
-            </div>
-        <!-- top Brooker Carousel ends -->
-            </div>
-          </div>
-  <!--all tabs ended  -->
-          
-        </div>
       </div>
     </div>
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -1421,7 +888,7 @@
 function openNav() {
     var x = window.matchMedia("(max-width: 425px)")
     if (x.matches) { // If media query matches
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.width = "60%";
     document.getElementById("sidebar").style.width="auto";
     
     }
