@@ -83,7 +83,7 @@ a{
     font-size: 20px;
 }
 .send-src-btn{
-	background-color: #dd8a0d !important;
+	background-color:#10172e !important;
     font-weight: 500 !important;
     color: white !important;
     top: 0 !important;
@@ -92,7 +92,7 @@ a{
     border:0 !important;
 }
 .modal-width {
-	max-width: 65%;
+	max-width: 65% !important;
 }
 .src-resp{
 	display: none;
@@ -105,6 +105,12 @@ a{
 }
 #open-src{
 	display: none;
+}
+#first-sec{
+	height: 300px;
+}
+.dropdown-item:hover{
+	color: #0da4dd !important;
 }
 @media only screen and (max-width: 768px){
 	.navbar , .ask-prop{
@@ -119,6 +125,9 @@ a{
 }
 
 @media only screen and (max-width:425px){
+	#first-sec{
+		height: 390px;
+	}
 	.sm-display{
 		display: none;
 	}

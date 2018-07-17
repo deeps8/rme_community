@@ -19,23 +19,6 @@
   <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
-
-
- 
-<style type="text/css">
-    #editor{max-height: 300px;}
-    .social{background-color: #3b5998;}
-    .social1{background-color: #4285f4;}
-    .social-btn{font-size: 1.17em ;color: white; }
-    .login-btn{background: #fd5c5b; color :white;border: 1px solid #fb3736;}
-    .login-btn:hover{background:#de2322; }
-  </style>
-
 </head>
 <body>
         <div class="modal fade" id="myModal">
@@ -112,14 +95,7 @@
                 
                 <li class="">
 
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Start Discussion</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                      
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#myModal">- Create Post</a>
-                        </li>
-                     
-                    </ul>
+                    <a href="#homeSubmenu"  data-toggle="modal" data-target="#myModal">Start Discussion</a>
                 </li>
                 <li class="">
                             <a href="myCommunity.html">My Commmnity</a>
@@ -130,6 +106,9 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Browse Community</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
+                            <a href="#">- Developer</a>
+                        </li>
+                         <li>
                             <a href="#">- Builder</a>
                         </li>
                         <li>
@@ -157,7 +136,7 @@
                             <a href="#">My Account</a>
                         </li>
                         <li>
-                        <p class="other">Others</p>
+                        <p class="other"></p>
                         </li>
                          <li class="">
                             <a href="#">FAQ</a>
@@ -171,7 +150,7 @@
   </div> 
 <!-- sidebar ends here -->
 <div id="main">
-  <div class="container-fluid nav-fluid" style="height: 300px;">
+  <div class="container-fluid nav-fluid" id="first-sec">
     <!-- navbar with search section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
@@ -196,9 +175,14 @@
               Browse Community
             </span>
             <div class="dropdown-menu" aria-labelledby="community">
-              <a class="dropdown-item" href="">com-1</a>
-              <a class="dropdown-item" href="">com-2</a>
-              <a class="dropdown-item" href="">com-3</a>
+              <a class="dropdown-item" href="">Developer</a>
+              <a class="dropdown-item" href="">Builder</a>
+              <a class="dropdown-item" href="">Broker</a>
+              <a class="dropdown-item" href="">Land Owner</a>
+              <a class="dropdown-item" href="">Human Resource</a>
+              <a class="dropdown-item" href="">Consultant</a>
+              <a class="dropdown-item" href="">End User</a>
+              <a class="dropdown-item" href="">Digital Marketing</a>
             </div>
           </div>
             </li>
@@ -267,28 +251,28 @@
 </script>
 
 <!-- events and annoucments -->
-<div class="container p-1 pt-3 pb-3">
+<div class="container">
   <h3 class="text-center p-4">Events And Announcements</h3>
   <div class="row">
-    <div class="col-md-3 ">
+    <div class="col-md-3 col-sm-12 ">
       <div class="events" >
         <h5 class="text-center p-2">Seminars</h5>
         <p><img src="https://png.icons8.com/dusk/50/000000/presentation.png"></p>
       </div>
     </div>
-    <div class="col-md-3 ">
+    <div class="col-md-3 col-sm-12 ">
       <div class="events">
         <h5 class="text-center p-2">Events</h5>
         <p><img src="https://png.icons8.com/dusk/80/000000/overtime.png"></p>
       </div>
     </div>
-    <div class="col-md-3 ">
+    <div class="col-md-3 col-sm-12 ">
       <div class="events">
         <h5 class="text-center p-2">Announcments</h5>
         <p><img src="https://png.icons8.com/dusk/50/000000/presentation.png"></p>
       </div>
     </div>
-    <div class="col-md-3 ">
+    <div class="col-md-3 col-sm-12 ">
       <div class="events">
         <h5 class="text-center p-2">Proposals</h5>
         <p><img src="https://png.icons8.com/dusk/80/000000/training.png"></p>
@@ -647,63 +631,94 @@
 
 <!--------------------------------------------FORUM------------------------ -->
 <!-- top developers section starts here  -->
-<div>
-<div class="top-category container p-md-0 p-1 mb-3">
-  <h3 class="text-center p-3">Top Categories</h3>
+<div class="top-category container mb-3">
+  <div class="stackholder">
+  <h3 class="text-center p-3">Stakeholders</h3>
   <div class="row">
     <div class="col-md-3">
       <div class="container categories">
-        <h5 class="text-center">Top Developer</h5>
+        <h5 class="text-center">Land Owner</h5>
+        <img src="img/land-owner.png" class="" alt="broker" style="height: 135px; width: 135px;" >
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container categories">
+        <h5 class="text-center">Land Developer</h5>
         <img src="img/developer.png" class="" alt="Developer" >
       </div>
     </div>
     <div class="col-md-3">
       <div class="container categories">
-        <h5 class="text-center">Top Builder</h5>
+        <h5 class="text-center">Builder</h5>
         <img src="img/builder.png" class="" alt="broker" >
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="container categories">
+        <h5 class="text-center">Project Invester</h5>
+        <img src="img/invester.png" class="" alt="broker" style="height: 138px;width: 160px;">
+      </div>
+    </div>
+    
+  </div>
+</div>
+  <div class="mt-5 beneficiary">
+  <h3 class="text-center p-3">Beneficiary</h3>   
+  <div class="row">
+
+   <div class="col-md-3">
+      <div class="container categories">
+        <h5 class="text-center">Broker</h5>
+        <img src="img/broker.png" class="" alt="broker" style="height: 130px; width: 130px;" >
       </div>
     </div>
     <div class="col-md-3">
       <div class="container categories">
-        <h5 class="text-center">Top Consultants</h5>
+        <h5 class="text-center">Broking Houses</h5>
+        <img src="img/broking-house.png" class="" alt="broker" >
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container categories">
+        <h5 class="text-center">Customer</h5>
         <img src="img/consultant.png" class="" alt="broker" style="height: 150px; width: 175px;">
       </div>
     </div>
     <div class="col-md-3">
       <div class="container categories">
-        <h5 class="text-center">Top Broker</h5>
-        <img src="img/broker.png" class="" alt="broker" style="height: 130px; width: 130px;" >
+        <h5 class="text-center">Vendors</h5>
+        <img src="img/consultant.png" class="" alt="broker" style="height: 150px; width: 175px;">
+      </div>
+    </div>
+    <div class="col-md-3 m-auto">
+      <div class="container categories">
+        <h5 class="text-center">Facilitator</h5>
+        <img src="img/consultant.png" class="" alt="broker" style="height: 150px; width: 175px;">
       </div>
     </div>
   </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <div class="container categories">
-        <h5 class="text-center">Top Broking Houses</h5>
-        <img src="img/broking-house.png" class="" alt="broker" >
-      </div>
+    <div class="col-md-4 col-lg-4 col-sm-12 terms">
+      <a href="" class="mr-4">Term of Use</a>
+      <a href="">Privacy Policy</a>
     </div>
-    <!-- <div class="col-md-3">
-      <div class="container categories">
-        <h5 class="text-center">Top idk</h5>
-        <img src="img/invester.jpg" class="" alt="broker" style="position: absolute;bottom: 0;right: 0">
-      </div>
-    </div> -->
-    <div class="col-md-3">
-      <div class="container categories">
-        <h5 class="text-center">Top Invester</h5>
-        <img src="img/invester.png" class="" alt="broker" style="height: 138px;width: 160px;">
-      </div>
+    <div class="col-md-4 col-lg-4 col-sm-12 copyright">
+      <span >© 2018 Launch. All rights reserved.</span>
     </div>
-    <div class="col-md-3">
-      <div class="container categories">
-        <h5 class="text-center">Top Land Owner</h5>
-        <img src="img/land-owner.png" class="" alt="broker" style="height: 135px; width: 135px;" >
-      </div>
+    <div class="col-md-4 col-lg-4 col-sm-12 social ">
+      <a href="" class="mr-3 social-btn twitter"><i class="fab fa-twitter"></i></a>
+      <a href="" class="mr-3 social-btn fb"><i class="fab fa-facebook-f"></i></a>
+      <a href="" class="mr-3 social-btn ln"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </div>
-</div>
-</div>
+  </div>
 
 
 

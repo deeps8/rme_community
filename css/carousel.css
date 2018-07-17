@@ -73,14 +73,14 @@
     height: 150px;
     background-color: #dddad7;
     border-radius: 2px;
-    box-shadow:0px 0px 3px #b6b3b3;
+    box-shadow:0px 0px 3px #6e6e6e;
     transition: all .2s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin:10px 0;
 }
 .events:hover{
-    box-shadow: 0px 0px 15px #b6b3b3;
+    box-shadow:0px 0px 15px #6e6e6e;
     transition: 0.5s;
     transform: scale(1.09);
 }

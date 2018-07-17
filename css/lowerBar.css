@@ -55,6 +55,37 @@
 .nextButton{
     right: 10px;
 }
+.footer{
+	background: #dddad7;
+    padding: 50px 0;
+}
+.terms , .copyright , .social{
+	text-align: center !important;
+}
+.terms a{
+	color: #10172e !important;
+	font-weight: 500;
+}
+.terms a:hover{
+	text-decoration:underline !important;
+	color: #0da4dd !important;
+} 
+.copyright{
+	color: #10172e;
+    font-weight: 500;
+}
+.social-btn{
+	padding: 15px 18px;
+    background: #b3b3b3;
+    border-radius: 100%;
+}
+.social a:hover{
+	background-color: #0da4dd;
+	color: !important;
+}
+.fb{
+	padding: 15px 21px;
+}
 @media(max-width:576px)
 {
 	.col-sm-3 ,.col-sm-4{
