@@ -189,7 +189,7 @@
             <li class="nav-item mr-lg-4 mr-md-3 mr-sm-3">
               <div class="dropdown">
           <span class="nav-link" id="profile" data-toggle="dropdown" aria-haspopup="true">
-            <img src="img/user.png" class="card-img-top rounded-circle">
+            <img src="img/profile.jpg" class="card-img-top rounded-circle">
             </span>
             <div class="dropdown-menu" aria-labelledby="profile" style="left: -80px;">
               <a class="dropdown-item" href="">Login</a>
@@ -253,7 +253,7 @@
                 <div class="row">
                   <!-- author of discussion (details) -->
                   <div class="col-2 author-info">
-                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
                     <p>simran53</p>
                     <span class="role">RMEUser</span>
                   </div>
@@ -300,7 +300,7 @@
                 <!-- first reply -->
                 <div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
                         <p>raj874</p>
                         <span class="role">RMEUser</span>
                   </div>
@@ -318,7 +318,7 @@
                 </div>
                 <div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
                         <p>aamir864</p>
                         <span class="role">Consultant</span>
                   </div>
@@ -339,7 +339,7 @@
                 </div>
 								<div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
                         <p>gyan442</p>
                         <span class="role">Broker</span>
                   </div>
@@ -360,7 +360,7 @@
                 </div>
 								<div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
                         <p>ritika541</p>
                         <span class="role">RMEUser</span>
                   </div>
