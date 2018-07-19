@@ -6,9 +6,10 @@
 .author-info{
 	text-align: center;
     font-size: 14px;
+    overflow: hidden;
     color: #0da4dd;
     font-weight: 500;
-    padding: 0 !important;
+    padding: 9px !important;
 }
 .author-info p{
 	margin: 0;
@@ -78,4 +79,12 @@
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 2px;
+}
+.ml-10{
+    margin-left: 10% !important;
+}
+@media only screen and (max-width: 425px){
+.ml-10{
+    margin-left: 0% !important;
+}
 }

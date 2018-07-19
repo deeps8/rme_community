@@ -17,10 +17,9 @@
 	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
-    
+
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+
 </head>
 <body>
 <div class="modal fade" id="myModal">
@@ -100,7 +99,7 @@
                     <a href="#homeSubmenu"  data-toggle="modal" data-target="#myModal">Start Discussion</a>
                 </li>
                 <li class="">
-                            <a href="myCommunity.html">My Commmnity</a>
+                            <a href="myCommunity.php">My Commmnity</a>
                 </li>
                 <li class="">
 
@@ -155,7 +154,7 @@
   <div id="main">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
-        <a href="index.html" class="home-btn sm-display"><i class="fas fa-home"></i></a>
+        <a href="index.php" class="home-btn sm-display"><i class="fas fa-home"></i></a>
         <form class="ml-lg-5 ml-md-5 ml-sm-1 sm-display" action="" method="" style="width: 40%">
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -242,12 +241,12 @@
 </script>
 
 	<div id="main">
-    
+
       <div class="container-fluid " style="margin-top: 5rem !important">
         <div class="row">
 
           <!-- discussion start -->
-          <div class="col-lg-6 col-md-6 col-sm-12 p-0 ml-5">
+          <div class="col-lg-6 col-md-6 col-sm-12">
 
             <div class="discussion">
               <!--General Real Estateart -->
@@ -256,22 +255,23 @@
                   <!-- author of discussion (details) -->
                   <div class="col-2 author-info">
                     <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
-                    <p>deeps8</p>
-                    <span class="role">RMEUser</span>
+                    <p>John711</p>
+                    <span class="role">Investor</span>
                   </div>
                   <!-- heading text , replies and time -->
                   <div class="col-10 heading-time">
-                    
-                    <h5>I am looking for a 3 BHK flat in Greater Noida,U.P. Suggestions for the same are welcome</h5>
+
+                    <h5>Investing in land in a metropolitan city</h5>
                     <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span><b> | </b>
-                      <span>Posted on: 12 jan 2018</span>
+                      <span>3 Replies</span><b> |</b>
+                      <span>50 Views</span><b> | </b>
+                      <span>Last Reply: 10 jul 2018 </span><b> | </b>
+                      <span>Posted on: 21 april 2018</span>
                     </div>
                     <div class="discussion-info">
                       <p>
-                        Swimming pool, parking and 24 hrs. power backup is required. 
+                        Is this RME platform trustworthy for huge real estate investments?
+												I need concrete reasons before I can proceed with the same. Please help.
                       </p>
                     </div>
                   </div>
@@ -279,40 +279,41 @@
                 </div>
               </div>
               <!-- heading of discussion end here -->
-              
+
               <!-- <span>Read more</span>
               <span>Read Less</span> -->
               <div style="padding: 0 9%" class="pb-4 dsc-status">
                 <button class="btn btn-primary discuss mr-5">Reply</button>
-                <span class="mr-3"><b>Upvote</b> : 12</span><b> | </b>
-                <span class="ml-3"><b>Downvote</b> : 12</span>
+                <span class="mr-3" style="font-size: 17px"><button><i class="far fa-thumbs-up"></i></button> 20</span><b> | </b>
+                <span class="ml-3" style="font-size: 17px"><button><i class="far fa-thumbs-down"></i></button> 2</span>
               </div>
             </div>
 
-            
+
 
             <!-- discussion replies (one "row" one reply) -->
               <div class="replies">
                 <div class="filter">
-                  <h6 class="d-inline">Replies : 1241</h6>
+                  <h6 class="d-inline">Replies : 3</h6>
                   <button class="btn btn-outline-success float-right">Sort by</button>
                 </div>
                 <!-- first reply -->
                 <div class="row">
                   <div class="col-2 author-info">
                     <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
-                        <p>vrinda529</p>
-                        <span class="role">Broker</span>
+                        <p>aman479</p>
+                        <span class="role">consultant</span>
                   </div>
                   <div class="col-10 reply-text">
                     <div class="text-right text-secondary font-weight-bold">20 mar 2018</div>
                     <p>
-                        There are flats available for the aforementioned requirements and from various famous builders like Jaypee,Guar,etc.
-                        You may visit RME portal and have a look at them. 
-                    </p>
+
+												Hello sir! I am a consultant associated with this patform from few months. I offer a wide range of services
+												including consultancy and documentation relating to investment in land all over India.
+										</p>
                     <div class="action-on-reply">
                     <button class="btn btn-outline-success">Comment</button>
-                    
+
                   </div>
                   </div>
 
@@ -320,21 +321,43 @@
                 <div class="row">
                   <div class="col-2 author-info">
                     <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
-                        <p>abhinav9112</p>
-                        <span class="role">Developer</span>
+                        <p>aakash724</p>
+                        <span class="role">Investor</span>
                   </div>
                   <div class="col-10 reply-text">
                     <div class="text-right text-secondary font-weight-bold">28 may 2018</div>
                     <p>
-                        Yes, I agree with vrinda529 that you must visit and the portal look for the desired property from various options available there. Moreover, the system is absolutely transparent and very easy to use
+                        Hi! I have invested in real estate in Kolkata and Mumbai.Be rest assured that this
+												platform is highly secure and trustworthy.It is natural for new investors like you to have doubts but
+											  the RME real estate platform is highly reliable.
                    </p>
                     <div class="action-on-reply">
                     <button class="btn btn-outline-success">Comment</button>
-                    
+
                   </div>
                   </div>
 
                 </div>
+								<div class="row">
+                  <div class="col-2 author-info">
+                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                        <p>ddeepak323</p>
+                        <span class="role">broker</span>
+                  </div>
+                  <div class="col-10 reply-text">
+                    <div class="text-right text-secondary font-weight-bold">01 june 2018</div>
+                    <p>
+												I second aakash724 and moreover, this platform provides information on options onn investing
+												in the best possible manner. You must visit the portal for once and explore how easy to use it is.
+										</p>
+                    <div class="action-on-reply">
+                    <button class="btn btn-outline-success">Comment</button>
+
+                  </div>
+                  </div>
+
+                </div>
+
               </div>
           <!-- discussion replies end here -->
 
@@ -342,10 +365,10 @@
           </div>
           <!-- whole discussion ended here -->
 
-          
+
 
           <!-- similar discussions section links of other discussion -->
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 ml-10">
             <div class="container similar-dsc">
               <h4>Similar Discussions</h4>
               <ul>
@@ -364,7 +387,7 @@
                       <span>123+ Views</span><b> | </b>
                       <span>Last Reply: 20 jun 2018 </span>
                     </div>
-                  
+
                 </li>
                 <li>
                   <a href="">Indian Real Estate Market</a>
@@ -373,7 +396,7 @@
                       <span>123+ Views</span><b> | </b>
                       <span>Last Reply: 20 jun 2018 </span>
                     </div>
-                  
+
                 </li>
                 <li>
                   <a href="">Indian Real Estate Market</a>
@@ -404,7 +427,7 @@
                       <span>123+ Views</span><b> | </b>
                       <span>Last Reply: 20 jun 2018 </span>
                     </div>
-                  
+
                 </li>
                 <li>
                   <a href="">Indian Real Estate Market</a>
@@ -413,7 +436,7 @@
                       <span>123+ Views</span><b> | </b>
                       <span>Last Reply: 20 jun 2018 </span>
                     </div>
-                  
+
                 </li>
                 <li>
                   <a href="">Indian Real Estate Market</a>
@@ -434,32 +457,32 @@
       </div>
 
 
-  		
+
 	</div>
 
-  <script>
+	<script>
 
-function openNav() {
-    var x = window.matchMedia("(max-width: 425px)")
-    if (x.matches) { // If media query matches
-    document.getElementById("mySidenav").style.width = "60%";
-    document.getElementById("sidebar").style.width="auto";
-    
-    }
-    else{
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("openbutton").style.display ="none";
-   }
-}
+	function openNav() {
+	    var x = window.matchMedia("(max-width: 425px)")
+	    if (x.matches) { // If media query matches
+	    document.getElementById("mySidenav").style.width = "100%";
+	    document.getElementById("sidebar").style.width="auto";
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("openbutton").style.display ="block";
+	    }
+	    else{
+	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("main").style.marginLeft = "250px";
+	    document.getElementById("openbutton").style.display ="none";
+	   }
+	}
 
-}
-</script>
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginLeft= "0";
+	    document.getElementById("openbutton").style.display ="block";
+
+	}
+	</script>
 
 </body>
 </html>

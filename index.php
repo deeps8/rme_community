@@ -98,7 +98,7 @@
                     <a href="#homeSubmenu"  data-toggle="modal" data-target="#myModal">Start Discussion</a>
                 </li>
                 <li class="">
-                            <a href="myCommunity.html">My Commmnity</a>
+                            <a href="myCommunity.php">My Commmnity</a>
                 </li>
                 <li class="">
 
@@ -154,7 +154,7 @@
     <!-- navbar with search section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
-        <a href="index.html" class="home-btn sm-display"><i class="fas fa-home"></i></a>
+        <a href="index.php" class="home-btn sm-display"><i class="fas fa-home"></i></a>
         <form class="ml-lg-5 ml-md-5 ml-sm-1 sm-display" action="" method="" style="width: 40%">
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -192,8 +192,8 @@
             <img src="img/User.png" class="card-img-top rounded-circle">
             </span>
             <div class="dropdown-menu" aria-labelledby="profile" style="left: -80px;">
-              <a class="dropdown-item" href="">Login</a>
-              <a class="dropdown-item" href="">Signin</a>
+              <a class="dropdown-item" href="signinup.php">Login</a>
+              <a class="dropdown-item" href="signinup.php">Signin</a>
               <a class="dropdown-item" href="">About Us</a>
             </div>
           </div>
@@ -305,6 +305,7 @@
       </ul>
 
 
+
       <div class="tab-content">
         <div id="tab1" class="container-fluid tab-pane active p-0">
           <ul class="list-group discuss-list">
@@ -314,11 +315,11 @@
                   <img src="img/User.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
-                  <a href="#"><p>Indian Real Estate news</p></a>
+                  <a href="General1.php"><p>I am looking for a 3 BHK flat in Greater Noida,U.P. Suggestions for the same are welcome</p></a>
                 </div>
                 <div class="col-sm-6">
-                <p>100<span> Replies</span> | 2k+<span>views</span> | <span>Last reply: </span>1 <span>day ago</span></p>
-                <p><span>Started by <a href="#"></span>shivamshukla541<span></a> on </span>1 year ago</p>
+                <p>2<span> Replies</span> | 123+<span>views</span> | <span>Last reply: </span>20 <span>june 2018</span></p>
+                <p><span>Started by <a href="#"></span>deeps8<span></a> on </span>12 jan 2018</p>
                 </div>
               </div>
             </li>
@@ -328,11 +329,11 @@
                   <img src="img/User.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
-                  <a href="#"><p>Infrastructural safety measures</p></a>
+                  <a href="General2.php"><p>Difference in property rates</p></a>
                 </div>
                 <div class="col-sm-6">
-                <p>1k<span> Replies</span> | 5k+<span>views</span> | <span>Last reply: </span>5 <span>days ago</span></p>
-                <p><span>Started by <a href="#"></span>deepaksharma8<span></a> on </span>1 year ago</p>
+                <p>4<span> Replies</span> | 94+<span>views</span> | <span>Last reply: </span>1 <span>week ago</span></p>
+                <p><span>Started by <a href="#"></span>simran53<span></a> on </span>2 july 2018</p>
                 </div>
               </div>
             </li>
@@ -378,11 +379,11 @@
                   <img src="img/User.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
-                  <a href="#"><p>Circle Rate: Know Its Relevance for the Home Buyers</p></a>
+                  <a href="Investment1.php"><p>Investing in land in a metropolitan city</p></a>
                 </div>
                 <div class="col-sm-6">
-                <p>100<span> Replies</span> | 2k+<span>views</span> | <span>Last reply: </span>1 <span>day ago</span></p>
-                <p><span>Started by <a href="#"></span>shivamshukla541<span></a> on </span>1 year ago</p>
+                <p>3<span> Replies</span> | 50+<span>views</span> | <span>Last reply: </span>10 <span>july 2018</span></p>
+                <p><span>Started by <a href="#"></span>shivamshukla541<span></a> on </span>21 april 2018</p>
                 </div>
               </div>
             </li>
@@ -392,11 +393,11 @@
                   <img src="img/User.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
-                  <a href="#"><p>Tips to generate additional income from your property</p></a>
+                  <a href="Investment2.php"><p>Looking for options for investment in Chennai</p></a>
                 </div>
                 <div class="col-sm-6">
-                <p>1k<span> Replies</span> | 5k+<span>views</span> | <span>Last reply: </span>5 <span>days ago</span></p>
-                <p><span>Started by <a href="#"></span>deepaksharma8<span></a> on </span>1 year ago</p>
+                <p>2<span> Replies</span> | 30+<span>views</span> | <span>Last reply: </span>20 <span>june 2018</span></p>
+                <p><span>Started by <a href="#"></span>deepaksharma8<span></a> on </span>12 jan 2018</p>
                 </div>
               </div>
             </li>
@@ -700,8 +701,6 @@
   </div>
   </div>
 </div>
-</div>
-
 <div class="footer">
   <div class="container">
   <div class="row">
@@ -719,6 +718,9 @@
     </div>
   </div>
   </div>
+</div>
+
+
 
 
 

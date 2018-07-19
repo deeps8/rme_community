@@ -2,7 +2,18 @@ body {
     font-family: "Lato", sans-serif;
     background-color:#f1f1f1 !important;
 }
-
+.invite{
+    background: #ffffff;
+    border: 0;
+    border-radius: 25px !important;
+    font-weight: 500;
+    color: #10172e;
+}
+.btn-success {
+    color: #fff !important;
+    background-color: #0da4dd !important;
+    border-color: #10172e !important;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -72,7 +83,7 @@ body {
 #joinedCommunity li{
     font-size: 13.7px;
     font-weight: 500;
-    padding: 10px;
+    padding:7px 10px;
     cursor: pointer;
     border: 0 !important;
     border-radius: 0 !important
@@ -122,8 +133,9 @@ body {
     left: 7px;
 }
 .role{
-    background: #dd960d8c;
+   background: transparent;
     border-radius: 25px;
+    color: #0da4dd;
     padding: 2px 12px;
     margin: 0 8%;
     font-weight: 500;
@@ -231,4 +243,10 @@ body {
 /* Handle on hover */
 .mem::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+@media(max-width: 768px)
+{
+    .width-unset{
+        width:  !important;
+    }
 }

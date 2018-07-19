@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	  <title>MyCommunity</title>
+	  <title>Single Discussion</title>
 	  <link rel="stylesheet" type="text/css" href="css/searchbar.css">
 	  <link rel="stylesheet" type="text/css" href="css/navnew.css">
 
 	  <link rel="stylesheet" type="text/css" href="css/navold.css">
 	  <link rel="stylesheet" type="text/css" href="css/Navs.css">
-	  <link rel="stylesheet" type="text/css" href="css/lowerBar.css">
+    <link rel="stylesheet" type="text/css" href="css/lowerBar.css">
+	  <link rel="stylesheet" type="text/css" href="css/single-discussion.css">
 
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
@@ -22,8 +23,7 @@
       
 </head>
 <body>
-
-          <div class="modal fade" id="myModal">
+<div class="modal fade" id="myModal">
                   <div class="modal-dialog modal-dialog-centered modal-width">
                   <div class="modal-dialog" style="max-width: 100%;width: 100%;">
                     <div class="modal-content">
@@ -100,7 +100,7 @@
                     <a href="#homeSubmenu"  data-toggle="modal" data-target="#myModal">Start Discussion</a>
                 </li>
                 <li class="">
-                            <a href="myCommunity.html">My Commmnity</a>
+                            <a href="myCommunity.php">My Commmnity</a>
                 </li>
                 <li class="">
 
@@ -152,10 +152,10 @@
   </div>
 
 
-	<div id="main">
+  <div id="main">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
-        <a href="index.html" class="home-btn sm-display"><i class="fas fa-home"></i></a>
+        <a href="index.php" class="home-btn sm-display"><i class="fas fa-home"></i></a>
         <form class="ml-lg-5 ml-md-5 ml-sm-1 sm-display" action="" method="" style="width: 40%">
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -241,189 +241,220 @@
   }
 </script>
 
+	<div id="main">
+    
+      <div class="container-fluid " style="margin-top: 5rem !important">
+        <div class="row">
 
-    	
-    	<div class="container-fluid">
-            <!-------------left section -------------->
-    		<div class="row">
-    			<div class="col-lg-2" style="padding: 0 5px 0 10px !important;">
-    				<div class="cur-comm-section" >
-            <span class=" form-control rounded-0 btn btn-success" style="font-size: 18px;font-weight: 500;" >Create New +</span>
+          <!-- discussion start -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
 
-    					<div class=" form-control rounded-0 gold-btn">Current Community
-                <i class="fa fa-cog fa-2x ml-3" title="Settings" style="font-size:20px"></i>
-                
+            <div class="discussion">
+              <!--General Real Estateart -->
+              <div class="head-of-discussion p-2">
+                <div class="row">
+                  <!-- author of discussion (details) -->
+                  <div class="col-2 author-info">
+                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <p>deeps8</p>
+                    <span class="role">RMEUser</span>
+                  </div>
+                  <!-- heading text , replies and time -->
+                  <div class="col-10 heading-time">
+                    
+                    <h5>I am looking for a 3 BHK flat in Greater Noida,U.P. Suggestions for the same are welcome</h5>
+                    <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span><b> | </b>
+                      <span>Posted on: 12 jan 2018</span>
+                    </div>
+                    <div class="discussion-info">
+                      <p>
+                        Swimming pool, parking and 24 hrs. power backup is required. 
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-                        <ul class="list-group" id="joinedCommunity">
-                            <li class="list-group-item active">Community 1</li>
-                            <li class="list-group-item">Community 2</li>
-                            <li class="list-group-item">Community 3</li>
-                            <li class="list-group-item">Community 3</li>
-                            <li class="list-group-item">Community 3</li>
-                            <li class="list-group-item rounded-0">Community 4</li>
-                        </ul>
-    				</div>
-            <div>
-              <h6>Recommended Community</h6>
-              <ul class="list-group" id="joinedCommunity">
-                            <li class="list-group-item active">Community 1</li>
-                            <li class="list-group-item">Community 2</li>
-                            <li class="list-group-item">Community 3</li>
-                            <li class="list-group-item">Community 3</li>
-                            <li class="list-group-item">Community 3</li>
-                            <li class="list-group-item rounded-0">Community 4</li>
+              <!-- heading of discussion end here -->
+              
+              <!-- <span>Read more</span>
+              <span>Read Less</span> -->
+              <div style="padding: 0 9%" class="pb-4 dsc-status">
+                <button class="btn btn-primary discuss mr-5">Reply</button>
+                <span class="mr-3"><b>Upvote</b> : 12</span><b> | </b>
+                <span class="ml-3"><b>Downvote</b> : 12</span>
+              </div>
+            </div>
+
+            
+
+            <!-- discussion replies (one "row" one reply) -->
+              <div class="replies">
+                <div class="filter">
+                  <h6 class="d-inline">Replies : 1241</h6>
+                  <button class="btn btn-outline-success float-right">Sort by</button>
+                </div>
+                <!-- first reply -->
+                <div class="row">
+                  <div class="col-2 author-info">
+                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                        <p>vrinda529</p>
+                        <span class="role">Broker</span>
+                  </div>
+                  <div class="col-10 reply-text">
+                    <div class="text-right text-secondary font-weight-bold">20 mar 2018</div>
+                    <p>
+                        There are flats available for the aforementioned requirements and from various famous builders like Jaypee,Guar,etc.
+                        You may visit RME portal and have a look at them. 
+                    </p>
+                    <div class="action-on-reply">
+                    <button class="btn btn-outline-success">Comment</button>
+                    
+                  </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-2 author-info">
+                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                        <p>abhinav9112</p>
+                        <span class="role">Developer</span>
+                  </div>
+                  <div class="col-10 reply-text">
+                    <div class="text-right text-secondary font-weight-bold">28 may 2018</div>
+                    <p>
+                        Yes, I agree with vrinda529 that you must visit and the portal look for the desired property from various options available there. Moreover, the system is absolutely transparent and very easy to use
+                   </p>
+                    <div class="action-on-reply">
+                    <button class="btn btn-outline-success">Comment</button>
+                    
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+          <!-- discussion replies end here -->
+
+
+          </div>
+          <!-- whole discussion ended here -->
+
+          
+
+          <!-- similar discussions section links of other discussion -->
+          <div class="col-lg-4 col-md-4 col-sm-12 ml-10">
+            <div class="container similar-dsc">
+              <h4>Similar Discussions</h4>
+              <ul>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
               </ul>
             </div>
-    			</div>
-                <!---------------Center----------------->
-    			<div class="col-lg-7 " style="padding: 0;">
-    				<div class="container-fluid">
-                          <!---------Chat Box------------>
-                           <div class="chat-box">
-                               <div class="container-fluid" style="height: 87%;overflow-y: auto;">
-                                   
-                                       <div class="container-fluid mb-2 mt-2" id="receiver">
-                                           <div class="row">
-                                               <div class="col-8 chat-text">
-                                                    <h6>SenderName</h6>
-                                                    <div class="sender-text" style="background-color: white">    
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.In fermentum vulputate semper.Morbi malesuada, elit vitae sollicitudin malesuada,
 
-                                                      <br><b>Time</b>
-                                                    </div> 
-                                                   
-                                               </div>
-                                                <div class="col-4 ">
-                                                   
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="container-fluid mb-2 mt-2" id="sender">
-                                           <div class="row">
-                                              <div class="col-4">
-                                               </div>
-                                               <div class="col-8 chat-text">
-                                                    <h6 class="text-right">ReceiverName</h6>
-                                                   <p class=" receiver-text" style="background-color: white">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.In fermentum vulputate semper.Morbi malesuada, elit vitae sollicitudin malesuada,
-
-                                                    <br><b>Time</b>
-                                                    </p>
-                                                   
-                                                                                             
-                                               </div>
-                                               
-                                           </div>
-                                       </div>
-                                       <div class="container-fluid mb-2 mt-2" id="sender">
-                                           <div class="row">
-                                              <div class="col-4">
-                                               </div>
-                                               <div class="col-8 chat-text">
-                                                      <h6 class="text-right">ReceiverName</h6>
-                                                   <p class=" receiver-text" style="background-color: white">                                                    Lorem ipsum dolor sit amet, 
-                                                    <br><b>Time</b>
-                                                    </p>
-                                                                                                                                               
-                                               </div>
-                                               
-                                           </div>
-                                       </div>
-                                        <div class="container-fluid mb-2 mt-2" id="receiver">
-                                           <div class="row">
-                                               <div class="col-8 chat-text">
-                                                    <h6>SenderName</h6>
-                                                    <div class="sender-text" style="background-color: white">    
-                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.In fermentum vulputate semper.Morbi malesuada, elit vitae sollicitudin malesuada,
-
-                                                      <br><b>Time</b>
-                                                    </div> 
-                                                   
-                                               </div>
-                                                <div class="col-4 ">
-                                                   
-                                               </div>
-                                           </div>
-                                       </div>
-                                   <div class="container-fluid send-text-area">
-                                   <form action="" method="post" enctype="" class="send-form">
-                                    <button class="file-btn icon-attach"><i class="fas fa-plus "></i></button>
-                                       <input type="file" name="attachment" class="file-btn" style="opacity: 0">
-                                       <input type="text" name="text" class="form-control rounded-0 pl-5" placeholder="Start Typing">
-                                       <input type="submit" name="send" class="src-btn send-src-btn btn-primary btn" value="Send" style="padding: 7px 10px!important;">
-                                   </form>
-                               </div>
-                               </div>
-                    
-                           </div> 
+            <div class="container trending-dsc mt-5">
+              <h4>Trending Discussions</h4>
+              <ul>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
                     </div>
-                </div>
-                <!----------------Right------------------>
-    			<div class="col-lg-3">
-    				<div class="" style="background: white;margin-top: 20px;border: 1px solid #c1c1c1;">
-                        <div class="commMembers">
-                            <span class="form-control rounded-0 gold-btn">Community members
-                              <button class="btn btn-danger rounded-0 ml-3 p-0 pr-3 pl-3">Invite +</button>
-                            </span>
-                            <h6 class="text-center"><span>Admin : </span><a href="" class="text-primary">Username</a></h6>
-                            <ul class="list-group mem">
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                    <span class="dot"></span>
-                                </li>
-                                <li class="list-group-item rounded-0">
-                                    <a href="">Username1</a>
-                                    <span class="role">Developer</span>
-                                    <i class="fas fa-comment-alt"></i>
-                                </li>
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
+              </ul>
+            </div>
 
-                            </ul>
-                        </div>
-                                          
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+          </div>
+          <!-- similar discussion ended here -->
+
+
+        </div>
+      </div>
+<div class="footer">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-12 terms">
+      <a href="" class="mr-4">Term of Use</a>
+      <a href="">Privacy Policy</a>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12 copyright">
+      <span >© 2018 Launch. All rights reserved.</span>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12 social ">
+      <a href="" class="mr-3 social-btn twitter"><i class="fab fa-twitter"></i></a>
+      <a href="" class="mr-3 social-btn fb"><i class="fab fa-facebook-f"></i></a>
+      <a href="" class="mr-3 social-btn ln"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  </div>
+</div>
 
   		
 	</div>
 
-	<script>
+  <script>
 
 function openNav() {
     var x = window.matchMedia("(max-width: 425px)")
