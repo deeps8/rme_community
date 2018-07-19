@@ -189,7 +189,7 @@
             <li class="nav-item mr-lg-4 mr-md-3 mr-sm-3">
               <div class="dropdown">
           <span class="nav-link" id="profile" data-toggle="dropdown" aria-haspopup="true">
-            <img src="img/User.png" class="card-img-top rounded-circle">
+            <img src="img/user.png" class="card-img-top rounded-circle">
             </span>
             <div class="dropdown-menu" aria-labelledby="profile" style="left: -80px;">
               <a class="dropdown-item" href="">Login</a>
@@ -254,7 +254,7 @@
                 <div class="row">
                   <!-- author of discussion (details) -->
                   <div class="col-2 author-info">
-                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
                     <p>John711</p>
                     <span class="role">Investor</span>
                   </div>
@@ -300,7 +300,7 @@
                 <!-- first reply -->
                 <div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
                         <p>aman479</p>
                         <span class="role">consultant</span>
                   </div>
@@ -320,7 +320,7 @@
                 </div>
                 <div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
                         <p>aakash724</p>
                         <span class="role">Investor</span>
                   </div>
@@ -340,7 +340,7 @@
                 </div>
 								<div class="row">
                   <div class="col-2 author-info">
-                    <img src="img/User.png" class="rounded-circle card-img-top" style="width: 45%">
+                    <img src="img/user.png" class="rounded-circle card-img-top" style="width: 45%">
                         <p>ddeepak323</p>
                         <span class="role">broker</span>
                   </div>

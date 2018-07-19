@@ -189,7 +189,7 @@
             <li class="nav-item mr-lg-4 mr-md-3 mr-sm-3">
               <div class="dropdown">
           <span class="nav-link" id="profile" data-toggle="dropdown" aria-haspopup="true">
-            <img src="img/User.png" class="card-img-top rounded-circle">
+            <img src="img/user.png" class="card-img-top rounded-circle">
             </span>
             <div class="dropdown-menu" aria-labelledby="profile" style="left: -80px;">
               <a class="dropdown-item" href="signinup.php">Login</a>
@@ -312,7 +312,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="General1.php"><p>I am looking for a 3 BHK flat in Greater Noida,U.P. Suggestions for the same are welcome</p></a>
@@ -326,7 +326,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="General2.php"><p>Difference in property rates</p></a>
@@ -340,7 +340,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>How children needs influence property buying?</p></a>
@@ -355,7 +355,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Managing finances in regards to infrastructure</p></a>
@@ -376,7 +376,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="Investment1.php"><p>Investing in land in a metropolitan city</p></a>
@@ -390,7 +390,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="Investment2.php"><p>Looking for options for investment in Chennai</p></a>
@@ -404,7 +404,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Advantages of Buying RERA Registered Projects</p></a>
@@ -419,7 +419,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Integrated Township: Changing the future of real estate sector</p></a>
@@ -440,7 +440,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Know Blockchain Technology</p></a>
@@ -454,7 +454,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Real Estate transactions using Blockchain</p></a>
@@ -468,7 +468,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Transparency and security using the all new RME cryptocurrency</p></a>
@@ -483,7 +483,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Learn how to operate the platform</p></a>
@@ -504,7 +504,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Gaur City Projects</p></a>
@@ -518,7 +518,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Greater Noida West projects</p></a>
@@ -532,7 +532,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Jaypee on its way to building a masterpiece</p></a>
@@ -546,7 +546,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>NBCC headed towards India's first world trade centre</p></a>
@@ -567,7 +567,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Gaur City Projects</p></a>
@@ -581,7 +581,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Greater Noida West projects</p></a>
@@ -595,7 +595,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>Jaypee on its way to building a masterpiece</p></a>
@@ -609,7 +609,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-sm-1">
-                  <img src="img/User.png" class="img-fluid" alt="Responsive image">
+                  <img src="img/user.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-sm-5">
                   <a href="#"><p>NBCC headed towards India's first world trade centre</p></a>
