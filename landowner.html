@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	  <title>Single Discussion</title>
+	  <title>Landowner</title>
 	  <link rel="stylesheet" type="text/css" href="css/searchbar.css">
 	  <link rel="stylesheet" type="text/css" href="css/navnew.css">
 
 	  <link rel="stylesheet" type="text/css" href="css/navold.css">
 	  <link rel="stylesheet" type="text/css" href="css/Navs.css">
     <link rel="stylesheet" type="text/css" href="css/lowerBar.css">
-	  <link rel="stylesheet" type="text/css" href="css/single-discussion.css">
-
+    <link rel="stylesheet" type="text/css" href="css/single-discussion.css">
+    <link rel="stylesheet" type="text/css" href="css/stackbenfic.css">
+	  
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
 
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+
 </head>
 <body>
 <div class="modal fade" id="myModal">
@@ -100,7 +101,7 @@
                     <a href="#homeSubmenu"  data-toggle="modal" data-target="#myModal">Start Discussion</a>
                 </li>
                 <li class="">
-                            <a href="myCommunity.php">My Commmnity</a>
+                            <a href="myCommunity.html">My Commmnity</a>
                 </li>
                 <li class="">
 
@@ -155,7 +156,7 @@
   <div id="main">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="fixed-nav">
         <i id="openbutton" class="fas fa-bars" style="font-size: 25px;" onclick="openNav()"></i>
-        <a href="index.php" class="home-btn sm-display"><i class="fas fa-home"></i></a>
+        <a href="index.html" class="home-btn sm-display"><i class="fas fa-home"></i></a>
         <form class="ml-lg-5 ml-md-5 ml-sm-1 sm-display" action="" method="" style="width: 40%">
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -223,7 +224,355 @@
           </ul>
         
     </nav>
+    <div class="container-fluid pt-2">
+      <div class="sub-header">
+        <h3 class="d-inline">Landowner</h3>
+        <form class="ml-lg-5 ml-md-5 ml-sm-1 float-right" action="" method="" style="width: 22%">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text p-0 border-0">
+                        <button type="submit" name="search" class="src-input-all btn src-btn pr-3 pl-3"><i class="fas fa-search"></i></button>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control src-input-all" id="inlineFormInputGroup" placeholder="search for Landowner">
+                  </div>
+          </form>
+      </div>
+    <div class="row">
+        <!-- filter section -->
+        <div class="col-lg-3 col-md-3 col-sm-12 container" >
+          <div class="filters  container">
+            <!-- market place -->
+            <h5>Market-Place</h5>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="pm">
+                <label class="custom-control-label" for="pm">Primary Market</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="sm">
+                <label class="custom-control-label" for="sm">Secondary Market</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="lm">
+                <label class="custom-control-label" for="lm">Leasing Market</label>
+            </div>
 
+            <!-- location  -->
+            <h5 class="mt-3">Location</h5>
+            <input type="text" name="location" placeholder="search as per state" class="form-control" id="location">
+
+            <!-- certification -->
+            <div class="certify">
+            <h5 class="mt-3">Certification</h5>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="cyes" name="certify">
+              <label class="custom-control-label" for="cyes">Yes</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="cno" name="certify">
+              <label class="custom-control-label" for="cno">No</label>
+            </div>
+            </div>
+
+            <div>
+              <h5 class="mt-3">Filter By</h5>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="popularity">
+                <label class="custom-control-label" for="popularity">Popularity</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="1s">
+                <label class="custom-control-label" for="1s">1 Star</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="2s">
+                <label class="custom-control-label" for="2s">2 Stars</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="3s">
+                <label class="custom-control-label" for="3s">3 Stars</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="4s">
+                <label class="custom-control-label" for="4s">4 Stars</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="5s">
+                <label class="custom-control-label" for="5s">5 Stars</label>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- list of profiles -->
+        <div class="col-lg-6 col-md-6 col-sm-12 p-0" >
+          <div class="prof-list mod-border">
+            <ul class="p-0">
+              <li class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3 col-lg-3 col-sm-2">
+                    <div class="prof-img">
+                    <img src="img/profile.jpg" alt="profile" class="card-img-top">
+                    <p>User Name</p>
+                    <button class="form-control"><i class="fas fa-envelope"></i>Send Message</button>
+                    <p>
+                      <span><i class="fab fa-facebook-f mr-3"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-10">
+                    <div class="mb-0 description">
+                      Ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </div>
+                    <div class="tags mb-2 mt-2">
+                      <span >Primary Market</span>
+                      <span >Secondary Market</span>
+                    </div>
+                    <div class="stars-certify">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="ml-3">Certified</span>
+                    </div>
+                    <div class="location">
+                      <span>Profile viewed : </span> <a>1.5k</a>
+                      <br>
+                      <span>Location : </span> <a>United States</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3 col-lg-3 col-sm-2">
+                    <div class="prof-img">
+                    <img src="img/profile.jpg" alt="profile" class="card-img-top">
+                    <p>User Name</p>
+                    <button class="form-control"> <i class="fas fa-envelope"></i>Send Message</button>
+                    <p>
+                      <span><i class="fab fa-facebook-f mr-3"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-10">
+                                        <div class="mb-0 description">
+                      Ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </div>
+                    <div class="tags mb-2 mt-2">
+                      <span >Primary Market</span>
+                      <span >Secondary Market</span>
+                    </div>
+                    <div class="stars-certify">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="ml-3">Certified</span>
+                    </div>
+                    <div class="location">
+                      <span>Profile viewed : </span> <a>100</a>
+                      <br>
+                      <span>Location : </span> <a>Delhi</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3 col-lg-3 col-sm-2" >
+                   <div class="prof-img">
+                    <img src="img/profile.jpg" alt="profile" class="card-img-top">
+                    <p>User Name</p>
+                    <button class="form-control"><i class="fas fa-envelope"></i> Send Message</button>
+                    <p>
+                      <span><i class="fab fa-facebook-f mr-3"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-10" >
+                                        <div class="mb-0 description">
+                      Ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </div>
+                    <div class="tags mb-2 mt-2">
+                      <span >Secondary Market</span>
+                    </div>
+                    <div class="stars-certify">
+                      <i class="fas fa-star"></i>
+                      <span class="ml-3">Not Certified</span>
+                    </div>
+                    <div class="location">
+                      <span>Profile viewed : </span> <a>1.5k</a>
+                      <br>
+                      <span>Location : </span> <a>United States</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3 col-lg-3 col-sm-2" >
+                    <div class="prof-img">
+                    <img src="img/profile.jpg" alt="profile" class="card-img-top">
+                    <p>User Name</p>
+                    <button class="form-control"><i class="fas fa-envelope"></i> Send Message</button>
+                    <p>
+                      <span><i class="fab fa-facebook-f mr-3"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-10" >
+                                        <div class="mb-0 description">
+                      Ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </div>
+                    <div class="tags mb-2 mt-2">
+                      <span >Primary Market</span>
+                    </div>
+                    <div class="stars-certify">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="ml-3">Not Certified</span>
+                    </div>
+                    <div class="location">
+                      <span>Profile viewed : </span> <a>1.5k</a>
+                      <br>
+                      <span>Location : </span> <a>United States</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pg">
+              <ul class="pagination">
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link">3</a></li>
+                <li class="page-item"><a href="" class="page-link">4</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- trending and forums discussions -->
+        <div class="col-lg-3 col-md-3 col-sm-12 container disc-forums">
+          <div class="trend-forums ">
+            <div class="container similar-dsc all-time-fav mod-border">
+              <h5>All Time Favourite Discussions</h5>
+              <ul>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="container similar-dsc all-time-fav mod-border">
+              <h5>Trending Discussions</h5>
+              <ul>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+
+                </li>
+                <li>
+                  <a href="">Indian Real Estate Market</a>
+                  <div class="dsc-status">
+                      <span>1241 Replies</span><b> |</b>
+                      <span>123+ Views</span><b> | </b>
+                      <span>Last Reply: 20 jun 2018 </span>
+                    </div>
+                </li>
+              </ul>
+            </div>
+
+
+
+            <div class="container similar-dsc all-time-fav mod-border">
+              <h5>Forums</h5>
+              <ul>
+                <li>
+                  <a href="">General Real Estate discussion</a>
+                  
+                </li>
+                <li>
+                  <a href="">Investor Portal</a>
+                  
+                </li>
+                <li>
+                  <a href="">Academy</a>
+                  
+                </li>
+                <li>
+                  <a href="">Builder</a>
+                  
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+        </div>
+    </div>
+    </div>
+</div>
 <script type="text/javascript">
   var srcinput=document.getElementById("resp-input");
   var opensrc=document.getElementById("open-src");
@@ -241,221 +590,9 @@
   }
 </script>
 
-	<div id="main">
-    
-      <div class="container-fluid " style="margin-top: 5rem !important">
-        <div class="row">
-
-          <!-- discussion start -->
-          <div class="col-lg-6 col-md-6 col-sm-12">
-
-            <div class="discussion">
-              <!--General Real Estateart -->
-              <div class="head-of-discussion p-2">
-                <div class="row">
-                  <!-- author of discussion (details) -->
-                  <div class="col-2 author-info">
-                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
-                    <p>deeps8</p>
-                    <span class="role">RMEUser</span>
-                  </div>
-                  <!-- heading text , replies and time -->
-                  <div class="col-10 heading-time">
-                    
-                    <h5>I am looking for a 3 BHK flat in Greater Noida,U.P. Suggestions for the same are welcome</h5>
-                    <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span><b> | </b>
-                      <span>Posted on: 12 jan 2018</span>
-                    </div>
-                    <div class="discussion-info">
-                      <p>
-                        Swimming pool, parking and 24 hrs. power backup is required. 
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <!-- heading of discussion end here -->
-              
-              <!-- <span>Read more</span>
-              <span>Read Less</span> -->
-              <div style="padding: 0 9%" class="pb-4 dsc-status">
-                <button class="btn btn-primary discuss mr-5">Reply</button>
-                <span class="mr-3"><b>Upvote</b> : 12</span><b> | </b>
-                <span class="ml-3"><b>Downvote</b> : 12</span>
-              </div>
-            </div>
-
-            
-
-            <!-- discussion replies (one "row" one reply) -->
-              <div class="replies">
-                <div class="filter">
-                  <h6 class="d-inline">Replies : 1241</h6>
-                  <button class="btn btn-outline-success float-right">Sort by</button>
-                </div>
-                <!-- first reply -->
-                <div class="row">
-                  <div class="col-2 author-info">
-                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
-                        <p>vrinda529</p>
-                        <span class="role">Broker</span>
-                  </div>
-                  <div class="col-10 reply-text">
-                    <div class="text-right text-secondary font-weight-bold">20 mar 2018</div>
-                    <p>
-                        There are flats available for the aforementioned requirements and from various famous builders like Jaypee,Guar,etc.
-                        You may visit RME portal and have a look at them. 
-                    </p>
-                    <div class="action-on-reply">
-                    <button class="btn btn-outline-success">Comment</button>
-                    
-                  </div>
-                  </div>
-
-                </div>
-                <div class="row">
-                  <div class="col-2 author-info">
-                    <img src="img/profile.jpg" class="rounded-circle card-img-top" style="width: 45%">
-                        <p>abhinav9112</p>
-                        <span class="role">Developer</span>
-                  </div>
-                  <div class="col-10 reply-text">
-                    <div class="text-right text-secondary font-weight-bold">28 may 2018</div>
-                    <p>
-                        Yes, I agree with vrinda529 that you must visit and the portal look for the desired property from various options available there. Moreover, the system is absolutely transparent and very easy to use
-                   </p>
-                    <div class="action-on-reply">
-                    <button class="btn btn-outline-success">Comment</button>
-                    
-                  </div>
-                  </div>
-
-                </div>
-              </div>
-          <!-- discussion replies end here -->
 
 
-          </div>
-          <!-- whole discussion ended here -->
-
-          
-
-          <!-- similar discussions section links of other discussion -->
-          <div class="col-lg-4 col-md-4 col-sm-12 ml-10">
-            <div class="container similar-dsc">
-              <h4>Similar Discussions</h4>
-              <ul>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                </li>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                  
-                </li>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                  
-                </li>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="container trending-dsc mt-5">
-              <h4>Trending Discussions</h4>
-              <ul>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                </li>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                  
-                </li>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                  
-                </li>
-                <li>
-                  <a href="">Indian Real Estate Market</a>
-                  <div class="dsc-status">
-                      <span>1241 Replies</span><b> |</b>
-                      <span>123+ Views</span><b> | </b>
-                      <span>Last Reply: 20 jun 2018 </span>
-                    </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-          <!-- similar discussion ended here -->
-
-
-        </div>
-      </div>
-<div class="footer">
-  <div class="container">
-  <div class="row">
-    <div class="col-md-4 col-lg-4 col-sm-12 terms">
-      <a href="" class="mr-4">Term of Use</a>
-      <a href="">Privacy Policy</a>
-    </div>
-    <div class="col-md-4 col-lg-4 col-sm-12 copyright">
-      <span >© 2018 Launch. All rights reserved.</span>
-    </div>
-    <div class="col-md-4 col-lg-4 col-sm-12 social ">
-      <a href="" class="mr-3 social-btn twitter"><i class="fab fa-twitter"></i></a>
-      <a href="" class="mr-3 social-btn fb"><i class="fab fa-facebook-f"></i></a>
-      <a href="" class="mr-3 social-btn ln"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-  </div>
-  </div>
-</div>
-
-  		
-	</div>
-
-  <script>
-
+	<script>
 function openNav() {
     var x = window.matchMedia("(max-width: 425px)")
     if (x.matches) { // If media query matches
@@ -476,7 +613,8 @@ function closeNav() {
     document.getElementById("openbutton").style.display ="block";
 
 }
-</script>
+
+	</script>
 
 </body>
 </html>

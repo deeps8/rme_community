@@ -1,0 +1,119 @@
+.mod-border{
+	    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    background-color: white;
+}
+.sub-header{
+	background-color: #0da4dd;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 2px 3px #333;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.sub-header h3{
+	font-weight: 100;
+}
+.filters h5, .all-time-fav h5{
+	padding: 5px 0;
+    border-bottom: 2px solid #0da4dd;
+    color: #10172e;
+}
+.all-time-fav{
+	padding: 0px 10px 5px 10px;
+	border:none!important;
+	margin-bottom: 5px;
+}
+.custom-checkbox{
+	margin: 3px 0;
+}
+.custom-control-label::after{
+	border:0.5px solid #0da4dd;
+}
+.custom-checkbox .custom-control-label::before {
+     border-radius: 0rem !important;
+}
+#location{
+	border: 0;
+    /*border-bottom: 1px solid #0da4dd;*/
+    border-radius: 0;
+    padding-left: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 2px 5px 0 rgba(0,0,0,.12);
+}
+.certify .custom-control-label::after{
+	border:0.5px solid #0da4dd;
+	border-radius: 100%;
+}
+.prof-list ul li{
+	padding: 30px 2%;
+    list-style-type: none;
+    box-shadow: 0px 2px 5px #c6cec9;
+}
+.prof-list ul li:hover{
+	background-color: #c4d6dd;
+	transition: all 0.9s;
+}
+.prof-img p{
+    text-align: center;
+    color: #10172e;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+}
+.prof-list ul li .form-control{
+	padding: 2px 0;
+    font-size: 12px;
+    background: #4fb075;
+    color: white;
+    border: 0;
+    border-radius: 0;
+}
+.prof-img{
+	box-shadow: 0px 0px 5px #d5d5d5;
+	margin-bottom: 15px;
+}
+.prof-img button {
+	cursor: pointer;
+}
+.prof-img button i{
+	margin-right: 5px;
+}
+.description{
+	font-size: 15px;
+    font-weight: 200;
+    word-spacing: 1px;
+    color: #10172e;
+}
+.tags span{
+	margin-right:10px;
+	background-color: #6a7f72;
+	border-radius: 25px;
+	color: white;
+	font-size: 14px;
+	padding: 2px 10px;  
+}
+.stars-certify i{
+	color: goldenrod;
+}
+.stars-certify span{
+	color: #10172e;
+    font-style: oblique;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.location a{
+	color:#0da4dd !important;
+}
+.pg {
+	padding:0px 2%;
+}
+.pagination li{
+	padding: 0 !important;
+    border: 0 !important;
+    margin: 5px 0;
+	display: inline;
+}
+.pagination a{
+	color: #10172e !important;
+    font-weight: 500;
+}
