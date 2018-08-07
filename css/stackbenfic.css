@@ -35,11 +35,17 @@
      border-radius: 0rem !important;
 }
 #location{
-	border: 0;
-    /*border-bottom: 1px solid #0da4dd;*/
     border-radius: 0;
-    padding-left: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 2px 5px 0 rgba(0,0,0,.12);
+    transition: all 1s;
+}
+#location:focus{
+    transition: all 1s;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #10172e;
+    width: 95%;
+    margin-left: 5%;
 }
 .certify .custom-control-label::after{
 	border:0.5px solid #0da4dd;
