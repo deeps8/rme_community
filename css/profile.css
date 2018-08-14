@@ -1,0 +1,104 @@
+.bg-prof{
+	background-color: #10172e;
+    height: 50%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.font-weight-bold {
+    font-weight: 500!important;
+}
+.prof-photo{
+	/*height: 400px;*/
+}
+.prof-info{
+	/*height: 400px;*/
+}
+.prof-area{
+	margin-top: 8%;
+	background: white;
+    position: relative;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px grey;
+}
+.box-sh{
+	position: relative;
+	padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    background-color: white;
+}
+.sm a{
+	color: #0da4dd  !important;
+	font-size: 15px;
+}
+.rates i{
+ color: goldenrod;
+}
+.prof-views{
+	background: #0da4dd;
+    padding: 10px 0;
+    color: white;
+    border-radius: 2px;
+}
+.name{
+	padding: 10px 0;
+    border-bottom: 2px solid #0da4dd;
+}
+.name span{
+	font-size: 18px;
+    background: #dedede;
+    padding: 0 10px;
+    margin-right: 10px;
+    color: #10172d;
+    border-radius: 25px;
+    letter-spacing: -1px;
+}
+.loc-market{
+	border-bottom: 2px solid #0da4dd;
+}
+.loc-market h6,.loc-market p, .add-links p{
+	display: inline-block;
+}
+.loc-market p{
+	background-color: #f1f1f16e;
+    margin: 0 10px;
+    letter-spacing: -1px;
+    /* border-right: 1px solid #0da4dd; */
+    /* border-left: 1px solid #dedede; */
+    border-bottom: 1px solid #0da4dd;
+    padding: 2px 10px;
+}
+.loc-market h6{
+	width: 110px;
+	margin-bottom: 20px;
+}
+.add-links{
+	font-size: 14px;
+}
+.add-links input{
+	border: 0;
+    border-bottom: 1px solid #b3b3b3;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding: 2px 10px;
+    outline: none !important;
+    font-size: 12px;
+}
+.post-text p{
+	text-align: left !important;
+    font-weight: 500;
+}
+.myposts{
+	background-color: #10172e;
+}
+.myposts .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+}
+.myposts .list-group-item:first-child {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
